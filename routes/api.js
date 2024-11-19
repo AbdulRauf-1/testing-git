@@ -6,8 +6,11 @@ router.get('/health', (req, res) => {
 });
 
 router.get('/users', (req, res) => {
-    res.status(200).json({ users: ['Alice', 'Bob'] });
-  });
+  res.status(200).json({ users: ['Alice', 'Bob'] });
+});
   
+router.get('/users2', (req, res) => {
+  res.status(200).json({ users: ['Charlie', 'David'] });
+});
 
 module.exports = router;
